@@ -1,7 +1,13 @@
 /**
 Cat Morgan
-catmorgan.github.io
-base CSS file
+https://catmorgan.github.io/SassCssComparisons/
+base scss file for imports
 **/
-@import './sass-styles.scss';
-@import './css-styles.css';
+
+@import './site.scss';
+
+//Sass files 
+@import './sass-styles/sass-nested';
+
+//CSS files
+@import './css-styles/css-nested';

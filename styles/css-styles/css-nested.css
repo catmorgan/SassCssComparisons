@@ -1,0 +1,7 @@
+.css-container .child {
+  color: blue;
+}
+
+.parent .child {
+  background-color: yellow;
+}

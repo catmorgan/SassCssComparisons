@@ -3,12 +3,48 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Sass/Css Comparisons</title>
+        <title>Sass/CSS Comparisons</title>
         <link rel="stylesheet" type="text/css" href="dist/index.css">
+        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=css&skin=desert"></script>
     </head>
     <body>
-        <div class="sass-div">
-            This is a div styled with sass.
+        <h1>Sass and CSS Comparisons</h1>
+        <div class="nesting-container">
+            <h2>Nesting (Parent-Child Relationship) </h2>
+            <div class="sass-container parent">
+                <h3>Sass</h3>
+                <div class="child">
+                    This is a child div styled with sass.
+                </div>
+                <pre class="prettyprint lang-css">
+                    .sass-container {
+                        .child {
+                            color: red;
+                        }
+                    }
+
+                    .parent {
+                        .child {
+                          border: thin solid black;
+                        }
+                    }
+                </pre>
+            </div>
+            <div class="css-container parent">
+                <h3>CSS</h3>
+                <div class="child">
+                    This is a child div styled with css.
+                </div>
+                <pre class="prettyprint lang-css">
+                    .css-container .child {
+                        color: blue;
+                    }
+                    
+                    .parent .child {
+                        background-color: yellow;
+                    }
+                </pre>
+            </div>
         </div>
     </body>
 </html>

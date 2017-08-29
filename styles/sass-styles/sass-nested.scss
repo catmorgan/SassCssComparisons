@@ -1,0 +1,11 @@
+.sass-container {
+  .child {
+    color: red;
+  }
+}
+
+.parent {
+  .child {
+    border: thin solid black;
+  }
+}
