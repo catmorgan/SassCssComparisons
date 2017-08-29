@@ -1,0 +1,11 @@
+{
+  "name": "sasscsscomparisons",
+  "version": "1.0.0",
+  "description": "A small page to show the differences in syntax between Sass and Css",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
