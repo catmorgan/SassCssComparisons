@@ -1,0 +1,9 @@
+.sass-container {
+  .hover {
+    &:hover {
+      text-decoration: underline;
+      background-color: purple;
+      color: white;
+    }
+  }
+}

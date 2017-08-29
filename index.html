@@ -9,9 +9,12 @@
     </head>
     <body>
         <h1>Sass and CSS Comparisons</h1>
+        <a href="https://github.com/catmorgan/SassCssComparisons" target="_blank">
+            GitHub Repository
+        </a>
         <div class="nesting-container">
-            <h2>Nesting (Parent-Child Relationship) </h2>
-            <div class="sass-container parent">
+            <h2>Nested Rules</h2>
+            <div class="sass-container">
                 <h3>Sass</h3>
                 <div class="child">
                     This is a child div styled with sass.
@@ -22,15 +25,9 @@
                             color: red;
                         }
                     }
-
-                    .parent {
-                        .child {
-                          border: thin solid black;
-                        }
-                    }
                 </pre>
             </div>
-            <div class="css-container parent">
+            <div class="css-container">
                 <h3>CSS</h3>
                 <div class="child">
                     This is a child div styled with css.
@@ -39,9 +36,60 @@
                     .css-container .child {
                         color: blue;
                     }
-                    
+                </pre>
+            </div>
+            <div class="sass-container parent">
+                <div class="child">
+                    This is a child div styled with sass, and the css styles are also being applied to it.
+                </div>
+                <pre class="prettyprint lang-css">
+                    .parent {
+                        .child {
+                            border: thin solid black;
+                        }
+                    }
+                </pre>
+            </div>
+            <div class="css-container parent">
+                <div class="child">
+                    This is a child div styled with css, and the scss styles are also being applied to it.
+                </div>
+                <pre class="prettyprint lang-css">
                     .parent .child {
                         background-color: yellow;
+                    }
+                </pre>
+            </div>
+        </div>
+        <div class="parent-container">
+            <h2>Parent Selectors: &</h2>
+            <div class="sass-container">
+                <h3>Sass</h3>
+                <div class="hover">
+                    Hover over me! I am styled with sass.
+                </div>
+                <pre class="prettyprint lang-css">
+                    .sass-container {
+                        .hover {
+                            &:hover {
+                            text-decoration: none;
+                            background-color: purple;
+                            color: white;
+                            }
+                        }
+                    }
+                </pre>
+            </div>
+            <div class="css-container">
+                <h3>CSS</h3>
+                <div class="hover">
+                    Hover over me! I am styled with css.
+                </div>
+                <pre class="prettyprint lang-css">
+                    .css-container .hover:hover {
+                        background-color: blue;
+                        color: green;
+                        text-decoration: underline;
                     }
                 </pre>
             </div>

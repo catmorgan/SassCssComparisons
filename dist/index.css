@@ -6,9 +6,6 @@ base scss file for imports
 pre.prettyprint {
   width: 100%; }
 
-pre.pln {
-  color: red; }
-
 .sass-container, .css-container {
   width: 49%;
   display: inline-block;
@@ -20,8 +17,18 @@ pre.pln {
 .parent .child {
   border: thin solid black; }
 
+.sass-container .hover:hover {
+  text-decoration: underline;
+  background-color: purple;
+  color: white; }
+
 .css-container .child {
   color: blue; }
 
 .parent .child {
   background-color: yellow; }
+
+.css-container .hover:hover {
+  background-color: blue;
+  color: green;
+  text-decoration: underline; }

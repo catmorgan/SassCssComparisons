@@ -8,6 +8,8 @@ base scss file for imports
 
 //Sass files 
 @import './sass-styles/sass-nested';
+@import './sass-styles/sass-parent';
 
 //CSS files
 @import './css-styles/css-nested';
+@import './css-styles/css-parent';
